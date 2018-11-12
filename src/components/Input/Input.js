@@ -10,32 +10,32 @@ PasswordInput.propTypes = {
     placeholder : PropTypes.string.isRequired,
     /*
     * @Params
-    * name : Input name resuseable get a param
+    * name : Input name resuseable get as a param
     */
     name : PropTypes.string.isRequired,
     /*
     * @Params
-    * value : Input value resuseable get a param
+    * value : Input value resuseable get as a param
     */
     value : PropTypes.string.isRequired,
     /*
     * @Params
-    * onChange : Input onChange resuseable get a param
+    * onChange : Input onChange resuseable get as a param
     */
     onChange: PropTypes.func.isRequired,
     /*
     * @Params
-    * value : Input value resuseable get a param
+    * value : Input value resuseable get as a param
     */
     value : PropTypes.any,
     /*
     * @Params
-    * type : Input type resuseable get a param
+    * type : Input type resuseable get as a param
     */
     // type: PropTypes.oneOf(['text', 'number', 'password']),
      /*
     * @Params
-    * error : Input Error resuseable get a param
+    * error : Input Error resuseable get as a param
     */
 //    error: PropTypes.string
 }   

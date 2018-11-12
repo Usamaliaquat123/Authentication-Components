@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 import { View,Text} from 'react-native';
-import PasswordInput from "./src/components/passwordInput";
+import Input from "./src/components/passwordInput";
 
 
 export default class App extends Component {
@@ -16,11 +16,8 @@ export default class App extends Component {
     return (
       <View>  
         <Text>Reuseable Components</Text>
-          <PasswordInput
-               placeholder="ajsdh" 
-                       />
-
-          {/* <TextInput paceholder="taresg"></TextInput> */}
+          <Input placeholder="ajsdh" type="password"/>
+            
       </View>
     );
   }
