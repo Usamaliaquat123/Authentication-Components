@@ -32,7 +32,7 @@ PasswordInput.propTypes = {
     * @Params
     * type : Input type resuseable get a param
     */
-    type: PropTypes.oneOf(['text', 'number', 'password']),
+    // type: PropTypes.oneOf(['text', 'number', 'password']),
      /*
     * @Params
     * error : Input Error resuseable get a param
