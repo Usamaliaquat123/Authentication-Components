@@ -16,9 +16,9 @@ export default class App extends Component {
     return (
       <View>  
         <Text>Reuseable Components</Text>
-          <PasswordInput placeholder="ajsdh" 
-                      
-                        />
+          <PasswordInput
+               placeholder="ajsdh" 
+                        type="text"/>
 
           {/* <TextInput paceholder="taresg"></TextInput> */}
       </View>

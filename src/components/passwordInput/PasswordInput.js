@@ -37,7 +37,7 @@ PasswordInput.propTypes = {
     * @Params
     * error : Input Error resuseable get a param
     */
-   error: PropTypes.string
+//    error: PropTypes.string
 }   
 export default class PasswordInput extends Component{
     constructor(props){
@@ -53,7 +53,7 @@ export default class PasswordInput extends Component{
         })
     }   
     render(){
-        const {placeholder ,name ,onChange,value,type,error} = this.props
+        const {placeholder ,name ,onChange,value,type} = this.props
         return(
             <View>
                  <TextInput placeholder={placeholder} 
@@ -62,8 +62,7 @@ export default class PasswordInput extends Component{
                            onChange={onChange}
                            value={value}
                            type={type}
-                           style={error && {border: 'solid 1px red'}}
-                           ></TextInput>
+                        ></TextInput>
             </View>
         )
     }
