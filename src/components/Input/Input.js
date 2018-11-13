@@ -55,7 +55,6 @@ export default class PasswordInput extends Component{
     render(){
         const {placeholder ,name ,onChange,value,type} = this.props
         return(
-            <View>
                  <TextInput placeholder={placeholder} 
                             name={name} 
                            autoCorrect={false}
@@ -63,7 +62,6 @@ export default class PasswordInput extends Component{
                            value={value}
                            type={type}
                         ></TextInput>
-            </View>
         )
     }
 }
