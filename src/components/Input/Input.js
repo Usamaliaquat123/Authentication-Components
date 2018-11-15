@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View,TextInput } from "react-native";
 import { PropTypes } from "prop-types";
 
-PasswordInput.propTypes = {
+Input.propTypes = {
     /*
     * @Params
     * Placeholder : Input Placeholder resuseable get a param
@@ -39,7 +39,10 @@ PasswordInput.propTypes = {
     */
 //    error: PropTypes.string
 }   
-export default class PasswordInput extends Component{
+
+
+
+export default class Input extends Component{
     constructor(props){
         super(props)
         this.state = {
