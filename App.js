@@ -9,10 +9,9 @@ export default class App extends Component {
     return (
       <View> 
         <KeyboardAwareScrollView>
-        <Text></Text>
-          <Input placeholder="email" type="email"/>
-          <Input placeholder="password" type="password" />
-          
+        <View>
+            
+          </View>  
         </KeyboardAwareScrollView> 
   
       </View>
