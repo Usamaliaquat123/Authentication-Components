@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { PropTypes } from "prop-types";
-import { Text, StyleSheet} from 'react-native'
+import { Text, StyleSheet, ToastAndroid,AlertIOS, Platform} from 'react-native'
 
 
 Button.propTypes = {
@@ -57,7 +57,11 @@ Button.propTypes = {
 
 
  defaultOnPress = () => {
-
+  if(Platform.OS === 'ios'){
+    AlertIOS.alert('Button is press on iOs, If you wanna change onPress set props as a function')
+  }else{
+    ToastAndroid.show('Button is press on Android, If you wanna change onPress set props as a function', ToastAndroid.LONG)
+  } 
  }
 
 
@@ -76,7 +80,9 @@ export default class Button extends Component{
   }
 }
 
-
+/*
+ * StyleSheet Default setup
+ */
 const style = StyleSheet.create({
   buttonText: {
     color: '#fff',

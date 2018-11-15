@@ -63,11 +63,35 @@ Input.propTypes = {
 }   
 
 Input.defaultProps = {
+    /*
+    * @Params
+    * name : Input name 
+    */
     name : defaultProps.name,
+    /*
+    * @Params
+    * placeholder : Input placeholder 
+    */
     placeholder : defaultProps.placeholder,
+    /*
+    * @Params
+    * onChange : Input onChange 
+    */
     onChange : defaultProps.onChange,
+    /*
+    * @Params
+    * value : Input value 
+    */
     value : defaultProps.value,
+    /*
+    * @Params
+    * type : Input type
+    */
     type : defaultProps.type,
+    /*
+    * @Params
+    * style : Input Styles 
+    */
     style : defaultProps.style
 }
 
