@@ -2,6 +2,22 @@ import React, { Component } from 'react';
 import { View,TextInput } from "react-native";
 import { PropTypes } from "prop-types";
 
+
+
+/*
+ * Default Props Model
+ */
+const defaultProps = {
+    name : '',
+    placeholder : '',
+    onChange : onChangeTrigger,
+    value : '',
+    type : '',
+    style : style.TextInput
+}
+
+
+
 Input.propTypes = {
     /*
     * @Params
@@ -32,16 +48,35 @@ Input.propTypes = {
     * @Params
     * type : Input type resuseable get as a param
     */
-    // type: PropTypes.oneOf(['text', 'number', 'password']),
-     /*
+    type: PropTypes.oneOf(['text', 'number', 'password']),
+    /*
     * @Params
     * error : Input Error resuseable get as a param
     */
-//    error: PropTypes.string
+    error: PropTypes.string,
+   /*
+    * @Params
+    * style : Input Styles resuseable get as a param
+    */
+    style : PropTypes.obj.isRequired
+   
 }   
 
+Input.defaultProps = {
+    name : defaultProps.name,
+    placeholder : defaultProps.placeholder,
+    onChange : defaultProps.onChange,
+    value : defaultProps.value,
+    type : defaultProps.type,
+    style : defaultProps.style
+}
 
 
+
+
+onChangeTrigger = () => {
+
+}
 export default class Input extends Component{
     constructor(props){
         super(props)
@@ -56,7 +91,7 @@ export default class Input extends Component{
         })
     }   
     render(){
-        const {placeholder ,name ,onChange,value,type} = this.props
+        const {placeholder ,name ,onChange,value,type,style} = this.props
         return(
                  <TextInput placeholder={placeholder} 
                             name={name} 
@@ -64,10 +99,24 @@ export default class Input extends Component{
                            onChange={onChange}
                            value={value}
                            type={type}
+                           style={style}
                         ></TextInput>
         )
     }
 }
+/*
+ * StyleSheet Default setup
+ */
+const style = StyleSheet.create({
+    textInput: {
+        alignSelf: 'stretch',
+        height: 40,
+        marginBottom: 30,
+        color: '#232632',
+        borderBottomColor: '#232632',
+        borderBottomWidth: 1,
+      }
+})
 
 
 
