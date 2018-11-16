@@ -1,11 +1,30 @@
 {
   "name": "Auth",
   "version": "0.0.1",
-  "private": true,
+  "engines" : {
+    "node" : ">=8.11.3"
+  },
+  "author" : {
+    "name" : "Usama liaquat",
+    "email": "inconnent12345@outlook.com",
+    "url" : "http://ulcreativeweb.wordpress.com/" 
+  },
+  "keywords" : [
+    "components",
+    "react",
+    "react-native",
+    "react-native components",
+    "toolkit",
+    "codeAvenue",
+    "pacakges",
+    "deps"
+  ],
+  "files" : ["./src/libs"],
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
+
   "dependencies": {
     "react": "16.6.0-alpha.8af6728",
     "react-native": "0.57.4"
