@@ -38,3 +38,10 @@ $ NODE_ENV=production node app
 | React | https://github.com/facebook/react/blob/master/README.md |
 | react-native | https://github.com/facebook/react-native/blob/master/README.md
 
+
+### Development
+
+Want to contribute? Great!
+
+@code-avenue/Auth uses react and react-native packages.
+Make a change in your file and instantanously see your updates!
